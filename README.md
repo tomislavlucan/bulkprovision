@@ -60,7 +60,7 @@ This CloudFormation stack will install the base component needed. It will create
 
 - Select the **LaunchStack** button
 Launch the stack:  
-[![CreateStack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=SC-RA-BulkDeployer-Master&templateURL=https://aws-service-catalog-reference-architectures.s3.amazonaws.com/bulkprovision/bulkmonitor-master-template.json)
+[![CreateStack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=SC-RA-BulkDeployer-Master&templateURL=https://workspaces-bulk.s3.eu-west-1.amazonaws.com/bulkprovision/bulkmonitor-master-template.json)
 
 - On the **Create stack** page select **Next**
 - On the **Specify stack details** page inputs:
