@@ -39,7 +39,7 @@
         "Description": "Executes a statemachine",
         "Handler": "lambda_startSF.handler",
         "Role": { "Ref":"LambdabulkdeployRoleArn" },
-		"Runtime": "python3.8",
+		"Runtime": "python3.12",
 		"Timeout": 3,
         "MemorySize":{"Ref":"Memory"},
 		"Environment":{ 
@@ -59,7 +59,7 @@
 		"Description": "uploads csv file to dynamo",
         "Handler": "lambda_function.uploadcsv_handler",
         "Role": { "Ref":"LambdabulkdeployRoleArn" },
-        "Runtime": "python3.8",
+        "Runtime": "python3.12",
 		"Timeout":   {"Ref":"Timeout"},
 		"MemorySize":{"Ref":"Memory"},
 		"Environment":{ 
@@ -78,7 +78,7 @@
         "FunctionName": "SC-BULK-PROVISION",
         "Handler": "lambda_function.provision_handler",
         "Role": { "Ref":"LambdabulkdeployRoleArn" },
-        "Runtime": "python3.8",
+        "Runtime": "python3.12",
 		"Timeout":   {"Ref":"Timeout"},
 		"MemorySize":{"Ref":"Memory"},
 		"Environment":{ 
@@ -97,7 +97,7 @@
         "FunctionName": "SC-BULK-TERMINATE",
         "Handler": "lambda_function.terminate_handler",
         "Role": { "Ref":"LambdabulkdeployRoleArn" },
-        "Runtime": "python3.8",
+        "Runtime": "python3.12",
 		"Timeout":   {"Ref":"Timeout"},
 		"MemorySize":{"Ref":"Memory"},
 		"Environment":{ 
@@ -116,7 +116,7 @@
         "FunctionName": "SC-BULK-MONITOR",
         "Handler": "lambda_function.monitor_handler",
         "Role": { "Ref":"LambdabulkdeployRoleArn" },
-        "Runtime": "python3.8",
+        "Runtime": "python3.12",
 		"Timeout":   {"Ref":"Timeout"},
 		"MemorySize":{"Ref":"Memory"},
 		"Environment":{ 
@@ -135,7 +135,7 @@
         "FunctionName": "SC-BULK-HANDLE-FAILED",
         "Handler": "lambda_function.failure_handler",
         "Role": { "Ref":"LambdabulkdeployRoleArn" },
-        "Runtime": "python3.8",
+        "Runtime": "python3.12",
 		"Timeout":   {"Ref":"Timeout"},
 		"MemorySize":{"Ref":"Memory"},
 		"Environment":{ 
@@ -154,7 +154,7 @@
         "FunctionName": "SC-BULK-CLEANUP",
         "Handler": "lambda_function.cleanup_handler",
         "Role": { "Ref":"LambdabulkdeployRoleArn" },
-        "Runtime": "python3.8",
+        "Runtime": "python3.12",
 		"Timeout":   {"Ref":"Timeout"},
 		"MemorySize":{"Ref":"Memory"},
 		"Environment":{ 
@@ -173,7 +173,7 @@
 		"FunctionName": "SC-BULK-REPORT",
         "Handler": "lambda_email.lambda_handler",
         "Role": { "Ref":"LambdabulkdeployRoleArn" },
-        "Runtime": "python3.8",
+        "Runtime": "python3.12",
 		"Timeout":   {"Ref":"Timeout"},
 		"MemorySize":{"Ref":"Memory"},
         "Environment": {
