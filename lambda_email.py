@@ -5,14 +5,14 @@ import logging
 import time
 logger = logging.getLogger()
 
-#Ken Walsh 4-20-2020
+#Ken Walsh 4-20-2020, Tomislav Lucan 09-02-2024
 #Reporting
 s3client  = boto3.client('s3')
 dyclient = boto3.client('dynamodb')
 ses_client =   boto3.client('ses')
 
 def lambda_handler(event,context):
-    _beg =  "<html><head><title>Servic Catalog Bulk Deployment for   </title>"  
+    _beg =  "<html><head><title>Service Catalog Bulk Deployment for   </title>"  
     _beg += "<link rel=stylesheet href=https://s3.amazonaws.com/kenwalshtestad/cfn/public/css/styletable.css>"
     _beg += "</head><body>"
     _beg += "<table id=customers border=2>"
@@ -50,7 +50,7 @@ def lambda_handler(event,context):
         event['EmailInfo'] = m_event
     return  event
 ##########################
-###S3 unctions #############################
+###S3 functions #############################
 def gen_surl(bucketname,keyname):
     url = s3client.generate_presigned_url(ClientMethod='get_object',Params={'Bucket': bucketname,'Key': keyname})
     return url 
