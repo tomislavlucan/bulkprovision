@@ -11,7 +11,7 @@ logger.setLevel(logging.INFO)
 
 
 ######################  SET VALUES HERE FOR YOUR ACCOUNT ##########################
-DEFAULT_REGION = 'us-east-1'
+DEFAULT_REGION = 'eu-west-1'
 CSV_BUCKET= "xxxxxxxxxxx" 
 CSV_KEY= "xxxxxxxxxxx" 
 DYANMO_TABLE = "xxxxxxxxxxx"
