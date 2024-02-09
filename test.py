@@ -13,7 +13,7 @@ logger.setLevel(logging.INFO)
 ######################  SET VALUES HERE FOR YOUR ACCOUNT ##########################
 DEFAULT_REGION = 'eu-west-1'
 CSV_BUCKET= "workspaces-bulk" 
-CSV_KEY= "key.csv" 
+CSV_KEY= "users_ire.csv" 
 DYANMO_TABLE = "xxxxxxxxxxx"
 PRODUCT_ID= "prod-xxxxxxxxxxx" # #Bulk deploy product             
 PROVISIONINGA_ART_ID="pa-xxxxxxxxxxx" # Workspace
